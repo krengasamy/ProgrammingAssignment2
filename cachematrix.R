@@ -4,7 +4,7 @@
 ## discuss here). Your assignment is to write a pair of functions that cache the 
 ## inverse of a matrix.
 
-## Write a short comment describing this function
+## This function will create a Matrix and caches its Inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -16,12 +16,12 @@ makeCacheMatrix <- function(x = matrix()) {
   {
     x
   }
-  ##set the Inverse
+  ##set the Matrix to Inverse
   setInv <-function(Inv){
     i <<- Inv
   }
   
-  ##Get the Inverse
+  ##Get the Matrix to Inverse
   getInv <-function(){
     m
   }
@@ -33,7 +33,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This Function checks to see if the inverse is already calculated, is so gets it 
+## from the cache and skips the computing the inverse
 
 cacheSolve <- function(x, ...) {
   m <- x$getInv()
